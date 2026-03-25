@@ -45,7 +45,7 @@
    - 建议选择 **将磁盘扩展为单个文件**（Single file），性能更好且管理方便。
    - 点击 **扩展**（Expand），等待进度完成。
 
-
+   ![VMware 扩展磁盘界面](images/vmware-expand-disk-settings.png)
 
 5. **完成并保存**：点击 **确定** 保存设置。
 
@@ -58,7 +58,7 @@
   3. 等待快照合并完成（时间取决于快照大小）。
   4. 再次尝试扩展。
 
-
+   ![快照管理器删除界面](images/vmware-snapshot-manager-delete.png)
 
 ## 步骤二：在 Windows 11 中扩展 C 盘分区
 
@@ -71,7 +71,7 @@
 3. **查看磁盘状态**：
    - 你会看到 **磁盘 0**（系统盘）末尾出现一块黑色的 **未分配**（Unallocated）空间。
 
-
+   ![Windows 磁盘管理未分配空间](images/windows-disk-management-unallocated.png)
 
 4. **直接扩展（理想情况）**：
    - 右键 **(C:) 分区** → **扩展卷**（Extend Volume）。
@@ -104,7 +104,7 @@
 6. 点击左上角 **应用**（Apply），确认执行操作。
 7. 重启虚拟机后验证容量。
 
-
+   ![DiskGenius 移动恢复分区示例](images/diskgenius-move-recovery-partition.png)
 
 **不推荐但可行的命令行方法**（高风险，仅备份后使用）：
 
@@ -148,14 +148,5 @@
 - 操作完成后建议再次创建快照，作为新基准点。
 
 完成以上步骤后，你的 Windows 11 虚拟机磁盘容量即可顺利扩大。如在操作中遇到具体错误截图，欢迎提供，我可以进一步帮助诊断。
-
----
-
-**图片占位说明**（请将以下图片放入 `images/` 文件夹）：
-
-- `images/vmware-expand-disk-settings.png` → VMware 扩展磁盘界面
-- `images/vmware-snapshot-manager-delete.png` → 快照管理器删除界面
-- `images/windows-disk-management-unallocated.png` → Windows 磁盘管理未分配空间
-- `images/diskgenius-move-recovery-partition.png` → DiskGenius 移动恢复分区示例
 
 祝操作顺利！
